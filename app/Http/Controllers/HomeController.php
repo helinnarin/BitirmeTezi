@@ -33,5 +33,13 @@ class HomeController extends Controller
     public function clarification(){
         return view('pages.clarification');
     }
+    public function bookinfo(){
+        return view('pages.bookinfo');
+    }
+
+
+    public function deneme(){
+        return view('pages.deneme');
+    }
 
 }

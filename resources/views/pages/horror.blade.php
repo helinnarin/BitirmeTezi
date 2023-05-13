@@ -1,124 +1,141 @@
 @extends('layout.master')
 @section('body')
-<div class="container text-center">
-    <div class="row">
 
-        <div class="col-lg-4">
-            <div class="card " style="width: 18rem;">
-                <img src="\images\9.jpg" class="card-img-top" alt="...">
-                <div class="card-body ">
-                    <h5 class="card-title d-flex justify-content-center">Gece Yarısı Kütüphanesi</h5>
-                    <p class="card-text d-flex justify-content-start">Yazar: Matt Haig
-                        <br> Çevirmen: Kıvanç Güney
-                        <br> Yayınevi: Domingo Yayınevi
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <p>20TL</p>
-                    </div>
-                    <div class=" d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Satın Al</a>
-                    </div>
 
+<!--Main layout-->
+<main class="my-5">
+    <div class="container">
+        <!--Section: Content-->
+        <div class="text-center">
+            <h4 class="mb-5"><strong>Horror Books</strong></h4>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="images\9.jpg" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Satın Al</a>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-        </div>
-        <div class="col-lg-4 ">
-            <div class="card" style="width: 18rem;">
-                <img src="\images\9.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">1984</h5>
-                    <p class="card-text d-flex justify-content-center">Yazar: George Orwell
-                        <br> Çevirmen: Celal Üster
-                        <br> Yayınevi: Can Yayınları - Dünya Klasikleri Dizisi
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <p>20TL</p>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="images\9.jpg" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Satın Al</a>
+                        </div>
                     </div>
-                    <div class=" d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Satın Al</a>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="images\9.jpg" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Satın Al</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="images\9.jpg" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Satın Al</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="images\9.jpg" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Satın Al</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="images\9.jpg" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Post title</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's content.
+                            </p>
+                            <a href="#!" class="btn btn-primary">Satın Al</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 ">
-            <div class="card" style="width: 18rem;">
-                <img src="\images\9.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Olağanüstü Bir Gece</h5>
-                    <p class="card-text d-flex justify-content-center">Yazar: Stefan Zweig
-                        <br> Yayınevi: İş Bankası Kültür Yayınları - Modern Klasikler
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <p>20TL</p>
-                    </div>
-                    <div class=" d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Satın Al</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--Section: Content-->
+
 
     </div>
-    <div class="row">
 
-        <div class="col-lg-4">
-            <div class="card " style="width: 18rem;">
-                <img src="\images\9.jpg" class="card-img-top" alt="...">
-                <div class="card-body ">
-                    <h5 class="card-title d-flex justify-content-center">Gece Yarısı Kütüphanesi</h5>
-                    <p class="card-text d-flex justify-content-start">Yazar: Matt Haig
-                        <br> Çevirmen: Kıvanç Güney
-                        <br> Yayınevi: Domingo Yayınevi
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <p>20TL</p>
-                    </div>
-                    <div class=" d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Satın Al</a>
-                    </div>
+</main>
 
-                </div>
+<!--Main layout-->
 
-            </div>
-        </div>
-        <div class="col-lg-4 ">
-            <div class="card" style="width: 18rem;">
-                <img src="\images\9.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">1984</h5>
-                    <p class="card-text d-flex justify-content-center">Yazar: George Orwell
-                        <br> Çevirmen: Celal Üster
-                        <br> Yayınevi: Can Yayınları - Dünya Klasikleri Dizisi
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <p>20TL</p>
-                    </div>
-                    <div class=" d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Satın Al</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 ">
-            <div class="card" style="width: 18rem;">
-                <img src="\images\9.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title d-flex justify-content-center">Olağanüstü Bir Gece</h5>
-                    <p class="card-text d-flex justify-content-center">Yazar: Stefan Zweig
-                        <br> Yayınevi: İş Bankası Kültür Yayınları - Modern Klasikler
-                    </p>
-                    <div class=" d-flex justify-content-center">
-                        <p>20TL</p>
-                    </div>
-                    <div class=" d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Satın Al</a>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-    </div>
-</div>
 
 @endsection
