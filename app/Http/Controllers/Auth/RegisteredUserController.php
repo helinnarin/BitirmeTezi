@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
 
+use function PHPSTORM_META\type;
+
 class RegisteredUserController extends Controller
 {
     /**

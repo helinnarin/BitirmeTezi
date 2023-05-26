@@ -7,7 +7,7 @@
     <div class="container">
         <!--Section: Content-->
         <div class="text-center">
-            <h4 class="mb-5"><strong>Kurumsal</strong></h4>
+            <h4 class="mb-5"><strong>About Us</strong></h4>
 
             <div class="row">
                 <div class="col-lg-6 mb-4">

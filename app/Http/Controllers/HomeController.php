@@ -2,28 +2,29 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Book;
+use App\Models\category;
+use App\Models\order;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
     public function homepage(){
         return view('pages.homepage');
     }
-    public function classics(){
-        return view('pages.classics');
+    public function orders(){
+        
+        $orders = order::where('buyer',Auth::user()->id)->get();
+        return view('pages.myorders',compact('orders'));
     }
-    public function adventure(){
-        return view('pages.adventure');
+    
+    public function books(){
+        $categories = category::all();
+        $books = Book::all();
+        return view('pages.books',compact('books','categories'));
     }
-    public function computer(){
-        return view('pages.computer');
-    }
-    public function mystery(){
-        return view('pages.mystery');
-    }
-    public function horror(){
-        return view('pages.horror');
-    }
+   
     public function about(){
         return view('pages.about');
     }
