@@ -12,17 +12,10 @@
             <div class="row">
                 <div class="col-lg-6 mb-4">
                     <div class="card">
-                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="img-fluid" />
-                            <a href="#!">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                            </a>
-                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">BookStore Marka Vizyonu</h5>
+                            <h5 class="card-title">BookStore Brand Vision</h5>
                             <p class="card-text">
-                                İnsanların zihnen özgürleşmesinin ve kişisel gelişimlerinin en büyük destekçisi olarak en çok sevilen deneyim markası olmak.
-                            </p>
+                                To be the most loved experience brand as the biggest supporter of people's mental liberation and personal development.</p>
 
                         </div>
                     </div>
@@ -30,16 +23,10 @@
 
                 <div class="col-lg-6 mb-4">
                     <div class="card">
-                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                            <img src="https://mdbootstrap.com/img/new/standard/nature/023.jpg" class="img-fluid" />
-                            <a href="#!">
-                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                            </a>
-                        </div>
                         <div class="card-body">
-                            <h5 class="card-title">BookStore Marka Misyonu</h5>
+                            <h5 class="card-title">BookStore Brand Mission</h5>
                             <p class="card-text">
-                                Sınırları kaldıran, özgürleştiren, destekleyen ve cesaretlendiren platform olmak.
+                                To be a platform that removes borders, liberates, supports and encourages.
                             </p>
 
                         </div>
@@ -54,4 +41,3 @@
 
 
 @endsection
-

@@ -14,7 +14,7 @@
     </div>
     
     <div class="text-center">
-    <button type="submit" class="btn m-4">Kategori Ekle</button>
+    <button type="submit" class="btn m-4">Create Category</button>
     </div>
 </form>
 

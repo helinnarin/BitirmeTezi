@@ -42,7 +42,7 @@
     </div>
  
     <div class="text-center">
-        <button type="submit" class="btn m-4">Kitap Düzenle</button>
+        <button type="submit" class="btn m-4">Update Book</button>
     </div>
 
 </form>

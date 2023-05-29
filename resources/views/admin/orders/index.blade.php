@@ -1,5 +1,12 @@
 @extends('layout.admin')
 @section('body')
+@if (\Session::has('success'))
+    <div class="alert alert-danger">
+        <ul>
+                <li>{!! \Session::get('success')!!}</li>
+        </ul>
+    </div>
+@endif
 
 
 <div class="container mb-4">

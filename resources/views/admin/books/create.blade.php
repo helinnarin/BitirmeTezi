@@ -38,7 +38,7 @@
   
 
     <div class="text-center">
-        <button type="submit" class="btn m-4">Kitap Ekle</button>
+        <button type="submit" class="btn m-4">Create Book</button>
     </div>
 </form>
 

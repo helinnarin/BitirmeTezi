@@ -8,8 +8,8 @@
         <tr>
             <th>Order</th>
             <th>Book</th>
-            <th>price</th>
-            <th>status</th>
+            <th>Price</th>
+            <th>Status</th>
         </tr>
     </thead>
     <tbody>
@@ -30,9 +30,9 @@
             </td>
             <td>
                 @if($order->status == 1)
-                <p class="fw-normal mb-1">Onaylı</p>
+                <p class="fw-normal mb-1">Confirmed</p>
                 @else
-                <p class="fw-normal mb-1">Onaylanmadı henüz</p>
+                <p class="fw-normal mb-1">It is not confirmed yet</p>
 
                 @endif
             </td>

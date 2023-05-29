@@ -15,7 +15,7 @@
     </div>
     
     <div class="text-center">
-        <button type="submit" class="btn m-4">Kategori Düzenle</button>
+        <button type="submit" class="btn m-4">Update Category</button>
     </div>
 
 </form>

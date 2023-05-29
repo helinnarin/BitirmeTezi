@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     public function homepage(){
-        return view('pages.homepage');
+        $books=Book::all();
+        return view('pages.homepage', compact('books'));
     }
     public function orders(){
         

@@ -12,30 +12,19 @@
                         <h5>Books</h5>
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="http://127.0.0.1:8000/classics" class="text-white">Classics</a>
+                                <a href="{{route('allBooks')}}" class="text-white">You can show all books here!</a>
                             </li>
-                            <li>
-                                <a href="http://127.0.0.1:8000/adventure" class="text-white">Adventure</a>
-                            </li>
-                            <li>
-                                <a href="http://127.0.0.1:8000/mystery" class="text-white">Mystery&Crime</a>
-                            </li>
-                            <li>
-                                <a href="http://127.0.0.1:8000/horror" class="text-white">Horror</a>
-                            </li>
-                            <li>
-                                <a href="http://127.0.0.1:8000/computer" class="text-white">Computer</a>
-                            </li>
+                
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                         <ul class="list-unstyled mb-0">
-                            <h5>Kurumsal</h5>
+                            <h5>Get to Know Us Better!</h5>
                             <li>
-                                <a href="http://127.0.0.1:8000/about" class="text-white">BookStore Hakkında</a>
+                                <a href="{{route('about')}}" class="text-white">About BookStore</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:8000/clarification" class="text-white">Aydınlatma Metni</a>
+                                <a href="{{route('clarification')}}" class="text-white">Clarification</a>
                             </li>
                         </ul>
                     </div>
@@ -43,20 +32,20 @@
 
                     <!--Grid column-->
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                        <h5>Yardım</h5>
+                        <h5>Support/Help</h5>
 
                         <ul class="list-unstyled mb-0">
                             <li>
-                                <a href="http://127.0.0.1:8000/help" class="text-white">Siparişler</a>
+                                <a href="{{route('help')}}" class="text-white">Shopping</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:8000/help" class="text-white">Teslimat ve Kargo</a>
+                                <a href="{{route('help')}}" class="text-white">Delivery</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:8000/help" class="text-white">Sipariş İptali</a>
+                                <a href="{{route('help')}}" class="text-white">Cancellation</a>
                             </li>
                             <li>
-                                <a href="http://127.0.0.1:8000/help" class="text-white">İade İşlemleri</a>
+                                <a href="{{route('help')}}" class="text-white">Returns</a>
                             </li>
 
                         </ul>
@@ -67,7 +56,7 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0 ">
                         <ul class="list-unstyled mb-0 ">
                             <li>
-                                <h5>Adres</h5>
+                                <h5>Adress</h5>
                                 <p class="text-white">Cukurova University</p>
                             </li>
                             <li>

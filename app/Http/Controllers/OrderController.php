@@ -69,7 +69,9 @@ class OrderController extends Controller
      */
     public function destroy(order $order)
     {
-        //
+        $order->delete();
+        return redirect()->back()->with('success', 'Deleted'); 
+
     }
     public function newOrder($id)
     {
@@ -81,7 +83,7 @@ class OrderController extends Controller
             'buyer' => Auth::user()->id,
             'price' => $book->price
         ]);
-        return redirect()->back()->with('success', 'Siparişiniz alındı');   
+        return redirect()->back()->with('success', 'Your order has been received');   
 
     }
 }

@@ -6,6 +6,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
+use App\Models\Book;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,13 +20,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'homepage']);
+Route::get('/', [HomeController::class, 'homepage'])->name('homepage');
 Route::get('/admin', [AdminController::class, 'index']);
 Route::get('/books-index', [HomeController::class, 'books'])->name('allBooks');
-Route::get('/bookinfo', [HomeController::class, 'bookinfo']);
-Route::get('/about', [HomeController::class, 'about']);
-Route::get('/help', [HomeController::class, 'help']);
-Route::get('/clarification', [HomeController::class, 'clarification']);
+Route::get('/bookinfo', [HomeController::class, 'bookinfo'])->name('bookinfo');
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+Route::get('/help', [HomeController::class, 'help'])->name('help');
+Route::get('/clarification', [HomeController::class, 'clarification'])->name('clarification');
 Route::get('/myorders', [HomeController::class, 'orders'])->name('myOrders');
 Route::resource('books',BookController::class);
 Route::get('/book-spec/{id}', [BookController::class, 'bookIndex'])->name('bookIndex');
@@ -34,7 +35,8 @@ Route::resource('orders',OrderController::class);
 Route::post('/order/{id}', [OrderController::class, 'newOrder'])->name('newOrder');
 Route::resource('category',CategoryController::class);
 Route::get('/dashboard', function () {
-    return view('pages.homepage');
+    $books=Book::all();
+    return view('pages.homepage',compact('books'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

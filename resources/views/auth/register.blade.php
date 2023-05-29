@@ -36,11 +36,11 @@
         <div class="form-check">
             <input class="form-check-input m-4" type="radio" name="gender" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
-                Kadın
+            Female
             </label>
             <input class="form-check-input m-4" type="radio" name="gender" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
-                Erkek
+                Male
             </label>
         </div>
 

@@ -28,6 +28,7 @@
                 <h4><strong>{{$book->title}}</strong></h4>
                 <p class="text-muted">
                     {{$book->desc}}
+                    {{$book->body}}
                 <p>
                     ${{$book->price}}
                 </p>
@@ -35,11 +36,10 @@
                  @csrf
                     <!-- Default input -->
                     <button class="btn  ms-1" type="submit">
-                        Satın Al
-                        <i class="fas fa-shopping-cart ms-1"></i>
+                        Buy It
                     </button>
                 </form>
-                </p>
+              
 
             </div>
         </div>

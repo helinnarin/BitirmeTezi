@@ -15,4 +15,5 @@ class Book extends Model
     {
         return url($this->image);
     }
+    
 }
