@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Book;
 use App\Http\Requests\StoreBookRequest;
 use App\Http\Requests\UpdateBookRequest;
+use App\Models\Author;
 use App\Models\category;
 use GuzzleHttp\Psr7\Message;
 use Illuminate\Support\Str;
@@ -28,7 +29,8 @@ class BookController extends Controller
     {
         
         $categories = category::all();
-        return view('admin.books.create',compact('categories'));
+        $authors = Author::all();
+        return view('admin.books.create',compact('categories','authors'));
     }
 
     /**
@@ -61,6 +63,7 @@ class BookController extends Controller
             'order' => $request->order,
             'category' => $request->category,
             'price' => $request->price,
+            'author_id'=>$request->author_id,
             
         ]);
         return to_route('books.index');
@@ -117,6 +120,7 @@ class BookController extends Controller
             'order' => $request->order,
             'category' => $request->category,
             'price' => $request->price,
+            'author_id'=>$request->author_id,
            
         ]);
         return to_route('books.index');

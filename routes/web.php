@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\BookController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
@@ -34,6 +35,7 @@ Route::resource('books',BookController::class);
 Route::resource('orders',OrderController::class);
 Route::post('/order/{id}', [OrderController::class, 'newOrder'])->name('newOrder');
 Route::resource('category',CategoryController::class);
+Route::resource('author',AuthorController::class);
 Route::get('/dashboard', function () {
     $books=Book::all();
     return view('pages.homepage',compact('books'));

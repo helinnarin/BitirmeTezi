@@ -1,7 +1,7 @@
 @if(Auth::user() == null)
 <nav class="navbar  navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand mt-2 mt-lg-0" href="{{route('homepage')}}">
-    <img src="/bookstore-meta.png" height="50" />
+    <img src="/images/bookstore-meta.png" height="50" />
   </a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -58,9 +58,12 @@
             <a class="dropdown-item" href="">Admin</a>
             <a class="dropdown-item" href="{{route('books.create')}}">Create Book</a>
             <a class="dropdown-item" href="{{route('books.index')}}">Books</a>
+            <a class="dropdown-item" href="{{route('category.create')}}">Create Category</a>
             <a class="dropdown-item" href="{{route('category.index')}}">Category</a>
-            <a class="dropdown-item" href="{{route('category.create')}}">Create category</a>
+            <a class="dropdown-item" href="{{route('author.create')}}">Create Author</a>
+            <a class="dropdown-item" href="{{route('author.index')}}">Author</a>
             <a class="dropdown-item" href="{{route('orders.index')}}">Orders</a>
+            
           </div>
         </div>
       </li>

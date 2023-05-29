@@ -8,6 +8,7 @@
         <tr>
             <th>Name</th>
             <th>Category</th>
+            <th>Author</th>
             <th>Slug</th>
             <th>Update</th>
             <th>Delete</th>
@@ -25,6 +26,10 @@
             </td>
             <td>
                 <p class="fw-normal mb-1">{{$book->category}}</p>
+            </td>
+
+            <td>
+                <p class="fw-normal mb-1">{{$book->author->name}}</p>
             </td>
             <td>
                 <p class="fw-normal mb-1">{{$book->slug}}</p>

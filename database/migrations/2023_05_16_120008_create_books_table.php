@@ -23,6 +23,7 @@ return new class extends Migration
             $table->integer('price');
             $table->integer('stock')->nullable();
             $table->boolean('featured')->default(0);
+            $table->unsignedInteger('author_id');
             $table->timestamps();
         });
     }

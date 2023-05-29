@@ -35,7 +35,14 @@
         <label for="comment">Price:</label>
         <input type="number" name="price" class="form-control">
     </div>
-  
+    <div class="form-group">
+        <label for="comment">Author:</label>
+        <select id="category" name="author_id" class="form-control">
+            @foreach($authors as $author)
+            <option value="{{$author->id}}">{{$author->name}}</option>
+            @endforeach
+        </select>
+    </div>
 
     <div class="text-center">
         <button type="submit" class="btn m-4">Create Book</button>

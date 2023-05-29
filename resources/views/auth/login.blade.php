@@ -40,8 +40,8 @@
 
 
         </div>
-        <div class="ml-4 mt-4">
-            <a class="btn btn-sm " href="{{route('register')}}">
+        <div class="ml-4 mt-4 text-center">
+            <a class="btn btn-sm "  href="{{route('register')}}">
             If you are not a member, you can become a member by clicking here!
             </a>
         </div>
