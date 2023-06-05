@@ -3,7 +3,7 @@
 
 
 <!--Main layout-->
-<main class="my-5">
+<main class="my-5 container">
 @if (\Session::has('success'))
     <div class="alert alert-success">
         <ul>

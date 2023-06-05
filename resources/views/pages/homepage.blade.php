@@ -6,7 +6,7 @@
             <h4 class="mb-5"><strong> Best Sellers of the Week </strong></h4>
         <div class="owl-carousel owl-theme">
           @foreach($books as $book)
-          <div class="item">
+          <div class="item"  style="height:320px;">
             <img src="{{$book->getfile()}}" class="img-fluid" />
           </div>
          @endforeach
