@@ -40,8 +40,4 @@ class HomeController extends Controller
     }
 
 
-    public function deneme(){
-        return view('pages.deneme');
-    }
-
 }

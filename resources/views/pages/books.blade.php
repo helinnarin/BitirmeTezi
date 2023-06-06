@@ -14,7 +14,7 @@
             <div class="container">
                 @foreach($books as $book)
                 <div class="filterDiv {{$book->category}}">
-                    <a href="{{route('bookIndex',$book->id)}}"><img src="{{$book->getfile()}}" class="img-fluid"/></a>
+                    <a href="{{route('bookIndex',$book->id)}}"><img src="{{$book->getfile()}}" class="img-fluid" style="height:150px;"/></a>
                 </div>
                 @endforeach
             </div>

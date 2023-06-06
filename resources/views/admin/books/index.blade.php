@@ -1,7 +1,5 @@
 @extends('layout.admin')
 @section('body')
-
-
 <div class="container mb-4">
 <table class="table align-middle mb-0 bg-white">
     <thead class="bg-light">

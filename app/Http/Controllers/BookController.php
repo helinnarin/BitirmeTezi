@@ -74,7 +74,8 @@ class BookController extends Controller
      */
     public function show(Book $book)
     {
-       return view('admin.books.edit',compact('book'));
+        $authors = Author::all();
+       return view('admin.books.edit',compact('book','authors'));
 
     }
 
@@ -90,7 +91,8 @@ class BookController extends Controller
      */
     public function edit(Book $book)
     {
-        return view('admin.books.edit',compact('book'));
+        $authors = Author::all();
+        return view('admin.books.edit',compact('book','authors'));
 
     }
 
